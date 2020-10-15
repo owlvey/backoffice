@@ -1,0 +1,11 @@
+﻿msal configurations
+https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-client-application-configuration
+
+
+az account list --output table
+
+
+az account set --subscription "My Demos"
+
+dotnet user-secrets init 
+dotnet user-secrets set "DatabaseSettings:DatabaseKey" "value"
