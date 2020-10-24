@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebServer", "src\WebServer\WebServer.csproj", "{14D8BE7A-3CC2-4210-A925-3E7D21E77623}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProfileBackOffice", "src\ProfileBackOffice\ProfileBackOffice.csproj", "{03091752-ABCC-4CD7-84EC-96763F14841B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Profile", "src\Profile\Profile.csproj", "{9D33832B-7777-4196-961A-9FC7710B232E}"
 EndProject
 Global
@@ -19,10 +17,6 @@ Global
 		{14D8BE7A-3CC2-4210-A925-3E7D21E77623}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14D8BE7A-3CC2-4210-A925-3E7D21E77623}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14D8BE7A-3CC2-4210-A925-3E7D21E77623}.Release|Any CPU.Build.0 = Release|Any CPU
-		{03091752-ABCC-4CD7-84EC-96763F14841B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{03091752-ABCC-4CD7-84EC-96763F14841B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{03091752-ABCC-4CD7-84EC-96763F14841B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{03091752-ABCC-4CD7-84EC-96763F14841B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9D33832B-7777-4196-961A-9FC7710B232E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9D33832B-7777-4196-961A-9FC7710B232E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D33832B-7777-4196-961A-9FC7710B232E}.Release|Any CPU.ActiveCfg = Release|Any CPU

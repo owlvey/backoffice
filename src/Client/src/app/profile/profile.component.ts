@@ -19,13 +19,37 @@ export class ProfileComponent implements OnInit {
   ngOnInit() {
     this.clearProfile();
   }
+  onclick(event){
+    let request = {
+      scopes: ["https://owlvey.onmicrosoft.com/api/read"]
+    };
+    this.authService.acquireTokenSilent(request).then(resp=>{
+      this.http.post("https://owlvey.azure-api.net/backoffice/profile/manual/paths/invoke", {
+          name: 'test', email: 'gcvalderrama@hotmail.com'
+        },
+        {
+         responseType: 'text',
+         headers:{
+            authorization: 'Bearer ' + resp.accessToken
+         }
+        }).subscribe(data=>{
+          this.message = data;
+          console.log(data);
+        }, error=>{
+        console.error(error);
+      });
+
+    }).catch(error => {
+      console.error(error);
+    });
+  }
   clearProfile(){
     let request = {
       scopes: ["https://owlvey.onmicrosoft.com/api/read"]
     };
     this.authService.acquireTokenSilent(request).then(resp=>{
       console.log(resp);
-      this.http.get("https://owlvey.azure-api.net/backoffice/profile/",
+      this.http.get("https://owlvey.azure-api.net/api/profile",
         {
          responseType: 'text',
          headers:{
